@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bobby Spence Squash</title>
+    <link rel="icon" type="image/x-icon" href="img/squash-ball.svg.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awesome cdn link to use for some of the icons like the stars and the quotes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- 
+      Used https://getbootstrap.com/docs/5.3/examples/navbars-offcanvas/ for guidance. 
+      Used the skeleton code for the 3rd example and edited it to what I needed
+     -->
+
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-light fixed-top border-bottom"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/squash-ball.svg.png"
+            alt="squash ball logo"
+            width="40"
+            height="40"
+          />
+          <span id="brand-name-title">Bobby Spence Squash</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse navbar-right justify-content-end"
+          id="navbarsExample04"
+        >
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="results.html">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fixtures.html">Fixtures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="saved.html">Saved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <!-- 
+      https://getbootstrap.com/docs/5.3/examples/heroes/
+      Used the 3rd example in the above link as guidance and edited it to fit my needs. 
+     -->
+
+    <div class="px-5 pt-5 bg-dark text-secondary">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="img/squash-g70107b7b8_1280.jpg"
+            class="d-block mx-lg-auto img-fluid hero-img"
+            alt="Squash Rackets"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-white hero-title">
+            Premier Squash Coach and Player
+          </h1>
+          <p class="lead hero-lead">
+            Join me on a squash journey if you want to improve your game,
+            increase your overall fitness or even if you just want to have some
+            good old fun.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <form>
+              <button
+                type="submit"
+                formaction="contact.html"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                Coaching
+              </button>
+            </form>
+            <form>
+              <button
+                type="submit"
+                formaction="fixtures.html"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Follow
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN with TESTIMONIAL CAROUSEL-->
+    <!-- 
+      https://mdbootstrap.com/docs/standard/extended/testimonial-slider/
+      - Used the code from the multi-item carousel. 
+      - Seems as if it was running on an older version of Bootstrap, so I had to edit it in a few places to get it functional. 
+      - Edited the content to match my site
+     -->
+
+    <main class="">
+      <!-- Carousel wrapper -->
+      <div
+        id="carouselMultiItemExample"
+        class="carousel slide carousel-dark text-center my-5"
+        data-bs-ride="carousel"
+      >
+        <!-- Controls -->
+        <div class="d-flex justify-content-center mb-4">
+          <button
+            class="carousel-control-prev position-relative"
+            type="button"
+            data-bs-target="#carouselMultiItemExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next position-relative"
+            type="button"
+            data-bs-target="#carouselMultiItemExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Inner -->
+        <div class="carousel-inner py-4">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(11).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Anna Deynah</h5>
+                  <p>Beginner</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    Greatest squash coach ever! Can't wait until the next
+                    season!
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(1).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Carrie Oakey</h5>
+                  <p>Intermediate</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    Bob really helped me develop my game.
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm"></i>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(2).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <p>Beginner</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    Bobby was really patient with me and taught me a lot of
+                    useful things that I was able to apply to my game.
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(6).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Helen Back</h5>
+                  <p>Beginner</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    I've only been winning since I signed up with Coach Bob.
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(8).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Will Power</h5>
+                  <p>Advanced</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    My mental side of the game needed improving. Bobby worked on
+                    this with me.
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm"></i>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img
+                    class="rounded-circle shadow-1-strong mb-4"
+                    src="img/img(9).webp"
+                    alt="avatar"
+                    style="width: 150px"
+                  />
+                  <h5 class="mb-3">Alex Rey</h5>
+                  <p>Beginner</p>
+                  <p class="text-muted">
+                    <span class="fas fa-quote-left pe-2"></span>
+                    I thought these were padel lessons. Squash is way better
+                    though!
+                  </p>
+                  <ul
+                    class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                  >
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+      </div>
+      <!-- Carousel wrapper -->
+    </main>
+
+    <!-- FOOTER -->
+    <!-- 
+      - https://getbootstrap.com/docs/5.3/examples/footers/
+      - Used example code from the examples, but edited the code quite heavily to center the content and implement my own logo and social media links    
+    -->
+
+    <footer class="container-fluid border-top py-4 text-center">
+      <a
+        href="index.html"
+        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+      >
+        <img
+          src="img/squash-ball.svg.png"
+          alt="squash ball logo"
+          class="mb-1"
+          width="40"
+          height="40"
+        />
+      </a>
+      <div class="d-flex align-items-center justify-content-center">
+        <span class="text-body-secondary mb-1">© 2023 Bobby Spence Squash</span>
+      </div>
+
+      <ul class="justify-content-center list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://twitter.com/"
+            ><img
+              src="img/twitter.png"
+              alt="twitter link"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/"
+            ><img
+              src="img/facebook.png"
+              alt="facebook link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.instagram.com/"
+            ><img
+              src="img/instagram.png"
+              alt="instagram link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

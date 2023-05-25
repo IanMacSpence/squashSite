@@ -1,0 +1,80 @@
+.navbar-brand {
+  margin-right: 2.5rem;
+}
+
+/* needed to make some font-sizes smaller for smaller screens */
+@media screen and (max-width: 375px) {
+  #brand-name-title,
+  form label,
+  .form-question {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-lead,
+  .form-header {
+    font-size: 1rem;
+  }
+}
+
+/* styles for the table on the result cards */
+.card-body table,
+.match-page-table {
+  text-align: left;
+  width: 100%;
+}
+
+.card-body table tr td:nth-child(1),
+.match-page-table tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+/* color of stars on review carousel */
+.checked {
+  color: orange;
+}
+
+/* remove hero image on medium and smaller screens */
+@media screen and (max-width: 992px) {
+  .hero-img {
+    display: none !important;
+  }
+}
+
+/* add padding to top of fixture tables for more horizontal space between them */
+.fixture-table {
+  padding-top: 2rem;
+}
+
+td {
+  white-space: nowrap;
+}
+
+/*thumbs up button*/
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.card-btn-like:hover {
+  background-color: #1127b8;
+  color: white;
+}
+
+.card-btn-save:hover {
+  background-color: #46af5b;
+  color: white;
+}
+
+.liked {
+  color: #1127b8;
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
+}
+
+.saved {
+  color: #46af5b;
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
+}

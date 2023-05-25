@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="img/squash-ball.svg.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-light fixed-top border-bottom"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/squash-ball.svg.png"
+            alt="squash ball logo"
+            width="40"
+            height="40"
+          />
+          <span id="brand-name-title">Bobby Spence Squash</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse navbar-right justify-content-end"
+          id="navbarsExample04"
+        >
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="results.html">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fixtures.html">Fixtures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="saved.html">Saved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION with FORM -->
+    <main class="mt-5">
+      <!-- used the form from the last task for most of the code, just added the radio buttons by reading the docs (https://getbootstrap.com/docs/5.3/forms/checks-radios/#radios) -->
+      <div
+        class="d-flex justify-content-center bg-dark text-light contact-form px-3"
+      >
+        <div class="col-md-7 col-lg-8 my-5">
+          <h4 class="mb-4 form-header">
+            Please enter your details below if you would like to sign up for
+            coaching
+          </h4>
+          <form class="needs-validation" id="contact-form">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label fw-medium"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label fw-medium"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">Valid last name is required.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="phoneNumber" class="form-label fw-medium"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">
+                  Valid phone number is required.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="emailAddress" class="form-label fw-medium"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailAddress"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">
+                  Valid email address is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <p class="fw-medium form-question">
+                Which age group do you fall under?
+              </p>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ageGroup"
+                  id="3-6"
+                  value="3-6 years old"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >3-6 years old</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ageGroup"
+                  id="7-12"
+                  value="7-12 years old"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >7-12 years old</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ageGroup"
+                  id="13-17"
+                  value="13-17 years old"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >13-17 years old</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ageGroup"
+                  id="18+"
+                  value="18+ years old"
+                />
+                <label class="form-check-label" for="inlineRadio4"
+                  >18+ years old</label
+                >
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <p class="fw-medium form-question">
+                What level are your squash skills?
+              </p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="skillLevel"
+                  id="levelBeginner"
+                  value="beginner"
+                />
+                <label class="form-check-label" for="levelBeginner"
+                  >Beginner</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="skillLevel"
+                  id="levelIntermediate"
+                  value="intermediate"
+                />
+                <label class="form-check-label" for="levelIntermediate"
+                  >Intermediate</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="skillLevel"
+                  id="levelAdvanced"
+                  value="advanced"
+                />
+                <label class="form-check-label" for="levelAdvanced"
+                  >Advanced</label
+                >
+              </div>
+            </div>
+
+            <button class="w-100 col-sm-6 btn btn-primary btn-lg" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid border-top py-4 text-center">
+      <a
+        href="index.html"
+        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+      >
+        <img
+          src="img/squash-ball.svg.png"
+          alt="squash ball logo"
+          class="mb-1"
+          width="40"
+          height="40"
+        />
+      </a>
+      <div class="d-flex align-items-center justify-content-center">
+        <span class="text-body-secondary mb-1">© 2023 Bobby Spence Squash</span>
+      </div>
+
+      <ul class="justify-content-center list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://twitter.com/"
+            ><img
+              src="img/twitter.png"
+              alt="twitter link"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/"
+            ><img
+              src="img/facebook.png"
+              alt="facebook link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.instagram.com/"
+            ><img
+              src="img/instagram.png"
+              alt="instagram link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

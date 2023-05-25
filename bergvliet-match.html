@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bergvliet Match</title>
+    <link rel="icon" type="image/x-icon" href="img/squash-ball.svg.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/comments.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-light fixed-top border-bottom"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/squash-ball.svg.png"
+            alt="squash ball logo"
+            width="40"
+            height="40"
+          />
+          <span id="brand-name-title">Bobby Spence Squash</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse navbar-right justify-content-end"
+          id="navbarsExample04"
+        >
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="results.html">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fixtures.html">Fixtures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="saved.html">Saved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-5 p-5">
+      <h1 class="mb-3">Match against Bergvliet (Away) - 13 April 2022</h1>
+      <div class="row d-flex">
+        <div class="col-lg-4 col-xl-4 px-3 my-1 container-left">
+          <img src="img/game2.webp" class="w-100" alt="photo of match" />
+          <div class="container">
+            <table class="match-page-table">
+              <tr>
+                <td>League</td>
+                <td>12th</td>
+              </tr>
+              <tr>
+                <td>Opposition Club</td>
+                <td>Bergvliet</td>
+              </tr>
+              <tr>
+                <td>Opponent</td>
+                <td>Peter Hendricks</td>
+              </tr>
+              <tr>
+                <td>Result</td>
+                <td>Win</td>
+              </tr>
+              <tr>
+                <td>Score</td>
+                <td>3-1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="container-right col-lg-6">
+          <p>
+            This was the second match of the season. The thing I liked most
+            about this match was that I came back to win 3-1 after losing my
+            first game. It was a real test of my mental strength and it was a
+            massive boost to my confidence to come out on top.
+          </p>
+          <p>
+            My opponent was a fair bit older than me, which usually means he'd
+            have had more experience playing the game, but I'd usually be the
+            one with better fitness. I felt we were fairly even skill wise and
+            that he played a lot of risky shots in the first game that paid off
+            for him. This luck didn't last into the rest of the games and I
+            think his fitness let him down which allowed me to take the next 3
+            games fairly comfortably.
+          </p>
+          <p>
+            Unfortunately our team ended up losing this fixture based on the
+            number of games, again, highlighting the importance of doing my best
+            to not give any games away.
+          </p>
+        </div>
+        <div class="d-flex card-buttons btn-group ps-4 pb-2">
+          <form class="d-flex d-inline align-items-center">
+            <span
+              class="material-symbols-outlined card-btn-like"
+              id="bergvliet-like"
+            >
+              thumb_up
+            </span>
+          </form>
+          <form class="d-flex d-inline align-items-center">
+            <span
+              class="material-symbols-outlined card-btn-save"
+              id="bergvliet-save"
+            >
+              bookmark
+            </span>
+          </form>
+        </div>
+      </div>
+      <div id="commentFormContainer" class="mt-5">
+        <form id="commentForm">
+          <label for="comment">Leave a comment:</label>
+          <textarea id="comment" rows="4" required></textarea>
+          <br />
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+
+      <div id="commentsContainer" class="ps-5"></div>
+    </main>
+
+    <footer class="container-fluid border-top py-4 text-center">
+      <a
+        href="index.html"
+        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+      >
+        <img
+          src="img/squash-ball.svg.png"
+          alt="squash ball logo"
+          class="mb-1"
+          width="40"
+          height="40"
+        />
+      </a>
+      <div class="d-flex align-items-center justify-content-center">
+        <span class="text-body-secondary mb-1">© 2023 Bobby Spence Squash</span>
+      </div>
+
+      <ul class="justify-content-center list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://twitter.com/"
+            ><img
+              src="img/twitter.png"
+              alt="twitter link"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/"
+            ><img
+              src="img/facebook.png"
+              alt="facebook link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.instagram.com/"
+            ><img
+              src="img/instagram.png"
+              alt="instagram link"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="scripts/bergvlietIndex.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/bergvliet-comments.js"></script>
+  </body>
+</html>
